@@ -13,22 +13,23 @@ header {
     flex-direction: column;
     background-image: url(images/headphones_hero_1.jpg);
 }
-.header_container {
-    padding: 20px;
-    margin: 20px
-}
+ .header_container {
+    padding: 50px;
+    margin: 2px;
+ }
+  .nav_container {
+    display: flex;
+    justify-content: space-between;
+  }
  .logo {
     width: 161px;
     height: 40px;
     cursor: pointer;
 }
-nav {
-    display: flex;
-    justify-content: end;
-}
 nav ul {
     list-style-type: none;
     display: inline-flex;
+    cursor: pointer;
 }
 nav ul li {
     margin-right: 20px;
@@ -38,14 +39,14 @@ nav a {
     color: white;
 }
 .hero {
-    margin: 100px;
+    margin-top: 100px;
     padding: 50px;
     text-align: center;
 }
 .hero h1 {
     color: white;
     font-weight: 32px;
-    margin: 10px;
+    margin: 20px;
 }
 .hero p {
     color: white;
@@ -53,8 +54,8 @@ nav a {
 }
 .btn {
     border-radius: 22px;
-    padding: 20px;
-    margin: 10%;
+    padding: 5px;
+    margin: 5%;
     border: 20px;
     color: white;
     background-color: red;
