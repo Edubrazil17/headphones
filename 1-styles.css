@@ -1,0 +1,339 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fcolor:#FFFFFF;
+    --btn:#FF6565;
+    --black:#071629;
+}
+body{
+    font-family: "Source Sans Pro", sans-serif;
+}
+.loo{
+    position:absolute;
+    visibility: hidden;
+}
+.lo{
+    position:relative;
+    visibility: visible;
+}
+
+.header{
+    width: 100%;
+    height: 800px;
+    background-image: url('./images/headphones_hero_1.jpg');
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .header_bar{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    width: 80%;
+   
+}
+.header .header_bar.logo{
+    height: 70px;
+    align-items: center;
+    display: flex;
+}
+.header .header_bar .logo img{
+    cursor: pointer;
+    width: 161px;
+    height: 37px;
+}
+.header .header_bar .list ul{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    width: 300px;
+    align-items: center;
+    height: 70px;
+    justify-content: space-around;
+}
+.header .header_bar .list ul a{
+    font-weight: 700;
+    color: var(--fcolor);
+    text-decoration: none;
+    transition: 0.7s;
+}
+.header .header_bar .list ul a:hover{
+   color: var(--btn);
+}
+.b{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b .box{
+    width: 64%;
+    height: 313px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.b .box h1{
+    color: var(--fcolor);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    
+}
+.b .box span{
+    margin-top: 5px;
+    color:var(--fcolor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+.bo.box button{
+    margin-top: 30px;
+    height: 44px;
+    cursor: pointer;
+    border: none;
+    flex-shrink: 0;
+    width: 162px;
+    border-radius: 22px;
+    background-color: var(--btn);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #FFF;
+}
+.b p{
+    width: 637px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    flex-shrink: 0;
+    color: var(--fcolor);
+    margin-top: 40px;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.main_what{
+    width: 80%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+  
+}
+.main_what .top{
+    padding-top: 20px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main_what .top h1{
+    padding-top: 20px;
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--black);
+}
+.main_what .top p{
+    padding-top: 20px;
+    width: 637px;
+    color: var(--black);
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+.main_what .b{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+.main_what .bot{
+    width: 80%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+.main_what .bot div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    width: 207px;
+}
+.main_what .bot h3{
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    color: var(--black);
+}
+.main_what .bot span{
+    text-align: center;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    color: var(--black);
+}
+.main_what .bot img{
+    color: var(--btn);
+}
+
+    /*////////////////// media screen for header/////////////// */
+
+@media (max-width: 1000px){
+    .b .box{
+        width: 100%;
+     }
+}
+
+@media (max-width: 700px){
+    .b p{
+        width: 97%;
+    }
+   
+}
+@media (max-width: 650px){
+    .header .header_bar .list ul{
+        width: 300px;
+        position: relative;
+        left: 50px;
+    } 
+   
+}
+@media (max-width: 600px){
+    .header .header_bar .list ul{
+       width: 300px;
+       left: 10px;
+    } 
+    .header .header_bar{
+        width: 95%;
+   
+     }
+    }
+@media (max-width: 500px){
+    .b .box{
+     height: auto;
+        
+}
+   
+}
+@media (max-width: 480px){
+    .lo{
+        position: absolute;
+        visibility: hidden;
+    }
+    .loo{
+        position:relative;
+        visibility: visible;
+       
+    }
+    .header .header_bar .logo{
+        display: flex;
+        justify-content: center;
+    }
+    .header .header_bar .logo img{
+        cursor: pointer;
+        width: 90%;
+        height: 70px;
+    }
+    
+    .header .header_bar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .header .header_bar .list ul{
+        flex-direction: column;
+        height: 200px;
+    }  
+   
+   
+}
+
+    /*////////////////// media screen for menu what/////////////// */
+
+    @media (max-width: 1000px){
+         .what .bots{
+            width: 90%;
+            flex-wrap: nowrap;
+            
+        }
+    }
+    @media (max-width: 800px){
+        .what .bots{
+           width: 97%;
+           flex-wrap: nowrap;
+           
+       }
+   }
+   @media (max-width: 700px){
+    .what .bots{
+       width: 80%;
+       flex-wrap: wrap;
+       
+   }
+   .what .top p{
+    width: 100%;
+
+}
+}
+@media (max-width: 650px){
+    .what .bots{
+       width: 90%;
+       flex-wrap: wrap;
+       align-items: center;
+       
+   }
+}
+@media (max-width: 600px){
+    .what .bots{
+       width: 97%;
+       flex-wrap: wrap;
+       
+   }
+}
+@media (max-width: 550px){
+    .what .bots{
+       width: 60%;
+       flex-wrap: wrap;
+       
+   }
+}
